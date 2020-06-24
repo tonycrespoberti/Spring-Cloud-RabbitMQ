@@ -1,0 +1,10 @@
+REM archivo de comandos para levantar el servicio de Zipkin Server para que consuma el canal
+REM de RabbitMQ
+@echo off
+set RABBIT_ADDRESSES=localhost:5672
+set RABBIT_PASSWORD=guest
+set RABBIT_USER=guest
+set STORAGE_TYPE=mysql
+set MYSQL_USER=zipkin
+set MYSWL_PASS=zipkin
+java -jar ./zipkin-server-2.21.4-exec.jar
